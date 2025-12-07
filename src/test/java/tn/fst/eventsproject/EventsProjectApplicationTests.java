@@ -137,7 +137,6 @@ class EventServicesImplTest {
         )).thenReturn(List.of(event));
 
         eventServices.calculCout();
-S
         assertEquals(20, event.getCout());
         verify(eventRepository).save(event);
     }
